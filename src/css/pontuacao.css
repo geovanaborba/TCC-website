@@ -1,0 +1,35 @@
+:root {
+    --lilas: #8888EA;
+    --laranja: #FCA82F;
+    --roxo: #6066D0;
+    --cinza-escuro: #535050;
+}
+
+body {
+    margin: 2%;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    text-align: right;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 15px;
+}
+
+nav li:hover {
+    color: var(--lilas);
+    cursor: pointer;
+}
+
+
+footer {
+    position: absolute;
+    font-size: 12px;
+    font-style: italic;
+    padding-top: 60px;
+    bottom: 2%;
+}
