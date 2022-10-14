@@ -25,13 +25,65 @@ nav li:hover {
     cursor: pointer;
 }
 
+header {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+    text-shadow: 2px 3px var(--lilas);
+}
+
+.card-perfil {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+  
+  img.avatar {
+    border-radius: 50%;
+    width: 120px;
+    padding: 3.7px;
+    border: var(--roxo) solid 4px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  .username {
+    font-family: 'Roboto Mono', monospace;
+    opacity: 0.8;
+    font-size: 18px;
+  }
+  
+  ul {
+    margin: 48px 0;
+  }
+  
+  ul li a {
+    width: 280px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--lilas); /* hex: 0 - F */
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+  
+    margin-bottom: 16px;
+    border-radius: 6px;
+  
+    transition: 400ms;
+  }
 
 
+ul li a:hover {
+    background: var(--laranja);
+  }
 
 footer {
-    position: absolute;
     font-size: 12px;
     font-style: italic;
-    padding-top: 60px;
     bottom: 2%;
 }
