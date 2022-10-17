@@ -6,8 +6,11 @@
 }
 
 body {
-    margin: 2%;
     font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    margin: 2%;
 }
 
 nav {
@@ -15,6 +18,7 @@ nav {
 }
 
 nav li {
+    position: relative;
     display: inline-block;
     margin-left: 20px;
     font-size: 15px;
@@ -24,6 +28,35 @@ nav li:hover {
     color: var(--lilas);
     cursor: pointer;
 }
+
+
+/* ----- Menu Dropdown para as Configurações ----- */ 
+
+nav .dropdown {
+    position:absolute;
+    background-color:#fff;
+    display:none;
+}
+
+nav li:hover ul, .menu li.over ul{
+    display:block;
+    right: 0;
+    width: 200px;
+}
+
+.li-dropdown {
+    padding-top: 20px;
+}
+
+.li-dropdown:hover {
+    background-color: var(--roxo);
+    color: #fff;
+    width:150px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+/* ----- Fim do Menu Dropdown ----- */
+
 
 header {
     display: flex;
@@ -89,11 +122,26 @@ main {
 }
 
 footer {
-    position: absolute;
-    font-size: 12px;
-    font-style: italic;
-    padding-top: 60px;
-    bottom: 2%;
+    font-size: 13px;
+    padding: 100px 100px 60px 100px;
+    background-color:var(--roxo) ;
+    color: #fff;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.integrantes h3{
+    color: var(--laranja);
+}
+
+/* Animação coração*/
+.fa-solid, .fa-heart, .fa-beat {
+    animation-duration: 1.5s; 
+    color: var(--laranja);
 }
 
 

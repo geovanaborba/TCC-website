@@ -14,68 +14,95 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&display=swap"
         rel="stylesheet">
 
+
     <title>ProgQuiz - Trabalho de Conclusão de Curso</title>
 </head>
 
 <body>
+    <div class="container">
 
-    <nav>
-        <ul>
-            <a href="./index.html">
-                <li>Início</li>
-            </a>
-            <a href="./src/assets/pages/pontuacao.html">
-                <li>Pontuação</li>
-            </a>
-            <a href="./src/assets/pages/estudos.html">
-                <li>Estudos</li>
-            </a>
-            <a href="./src/assets/pages/perfil.html">
-                <li>Perfil</li>
-            </a>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <a href="./index.html">
+                    <li>Início</li>
+                </a>
+                <a href="./src/assets/pages/pontuacao.html">
+                    <li>Pontuação</li>
+                </a>
+                <a href="./src/assets/pages/estudos.html">
+                    <li>Estudos</li>
+                </a>
+                <a href="./src/assets/pages/perfil.html">
+                    <li>Perfil</li>
+                </a>
 
-    <header>
-        <img src="./src/assets/imgs/undraw_version_control_re_mg66.svg"
-            alt="imagem de avatar masculino sentado com um notebook no colo">
-        <h1>ProgQuiz</h1>
-    </header>
+                <li><i class="fa-solid fa-gear"></i>
+                    <ul class="dropdown">
+                        <li class="li-dropdown">Alterar foto de perfil</li>
+                        <li class="li-dropdown">Alterar dados</li>
+                        <li class="li-dropdown">Ver certificados</li>
+                        <li class="li-dropdown">Ranking</li>
+                    </ul>
+                </li>
 
-    <main>
-        <div class="buttons">
-            <button class="btn-jogar">Jogar</button>
-            <button class="btn-pontos">Mostrar Pontuação</button>
-        </div>
-    </main>
+            </ul>
+        </nav>
 
-    <section class="acesso">
 
-        <a href="https://www.apple.com/br/app-store/" target="_blank">
-            <img class="app-store" src="./src/assets/imgs/Download_on_the_App_Store_Badge.svg.png"
-                alt="botão faça download na App Store"></a>
+        <header>
+            <img src="./src/assets/imgs/undraw_version_control_re_mg66.svg"
+                alt="imagem de avatar masculino sentado com um notebook no colo">
+            <h1>ProgQuiz</h1>
+        </header>
 
-        <a href="https://play.google.com/store/games?utm_source=latam_Med&utm_medium=hasem&utm_content=Jul1520&utm_campaign=Evergreen&pcampaignid=MKT-FDR-latam-br-1002290-Med-hasem-py-Evergreen-Jul1520-Text_Search_BKWS-28432345789&gclid=CjwKCAjw7p6aBhBiEiwA83fGugbTKBppJ8kOtxO3xg0kzHshHG0x2YBwNq1Y035I6jNupZOU22KZ4BoCJrgQAvD_BwE&gclsrc=aw.ds"
-            target="_blank">
-            <img class="play-store" src="./src/assets/imgs/pt-br_badge_web_generic.png"
-                alt="botão faça download na Play Store"></a>
-    </section>
+        <main>
+            <div class="buttons">
+                <a href="./src/assets/pages/quiz.html">
+                    <button class="btn-jogar">Jogar</button>
+                </a>
+                <a href="./src/assets/pages/pontuacao.html">
+                    <button class="btn-pontos">Mostrar Pontuação</button>
+                </a>
+            </div>
+        </main>
 
+        <section class="acesso">
+
+            <a href="https://www.apple.com/br/app-store/" target="_blank">
+                <img class="app-store" src="./src/assets/imgs/Download_on_the_App_Store_Badge.svg.png"
+                    alt="botão faça download na App Store"></a>
+
+            <a href="https://play.google.com/store/games?utm_source=latam_Med&utm_medium=hasem&utm_content=Jul1520&utm_campaign=Evergreen&pcampaignid=MKT-FDR-latam-br-1002290-Med-hasem-py-Evergreen-Jul1520-Text_Search_BKWS-28432345789&gclid=CjwKCAjw7p6aBhBiEiwA83fGugbTKBppJ8kOtxO3xg0kzHshHG0x2YBwNq1Y035I6jNupZOU22KZ4BoCJrgQAvD_BwE&gclsrc=aw.ds"
+                target="_blank">
+                <img class="play-store" src="./src/assets/imgs/pt-br_badge_web_generic.png"
+                    alt="botão faça download na Play Store"></a>
+        </section>
+
+    </div>
     <footer>
 
-        <!--         
-        <div>
-            <p>Arthur Luna</p>
-            <p>Bruno Hideo</p>
-            <p>Eduardo Guertz</p>
-            <p>Geovana Borba</p>
-            <p>Naíra Ferraz</p>
-        </div>-->
+        <div class="rodape">
+            <div class="credito">
+                <p>Página criada como parte do Trabalho de Conclusão de Curso do curso técnico de Desenvolvimento de
+                    Sistemas da
+                    ETEC. </p>
+                <br>
+                <p>Desenvolvido com <i class="fa-solid fa-heart fa-beat"></i> por Geovana Borba. </p>
+            </div>
 
-        <p>Página criada como parte do Trabalho de Conclusão de Curso do curso técnico de Desenvolvimento de Sistemas da
-            ETEC. </p>
+            <div class="integrantes">
+                <h3>Integrantes do TCC:</h3>
+                <p>Arthur Luna</p>
+                <p>Bruno Hideo</p>
+                <p>Eduardo Guerts</p>
+                <p>Geovana Borba</p>
+                <p>Naíra Ferraz</p>
+            </div>
+        </div>
     </footer>
 
 </body>
+
+<script src="https://kit.fontawesome.com/5f56dfe06a.js" crossorigin="anonymous"></script>
 
 </html>
