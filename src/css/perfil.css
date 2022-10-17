@@ -1,89 +1,155 @@
 :root {
-    --lilas: #8888EA;
-    --laranja: #FCA82F;
-    --roxo: #6066D0;
-    --cinza-escuro: #535050;
+  --lilas: #8888EA;
+  --laranja: #FCA82F;
+  --roxo: #6066D0;
+  --cinza-escuro: #535050;
 }
 
 body {
-    margin: 2%;
-    font-family: 'Poppins', sans-serif;
+  margin: 2%;
+  font-family: 'Poppins', sans-serif;
 }
 
 nav {
-    text-align: right;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 nav li {
-    display: inline-block;
-    margin-left: 20px;
-    font-size: 15px;
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 15px;
+  
 }
 
 nav li:hover {
-    color: var(--lilas);
-    cursor: pointer;
+  color: var(--lilas);
+  cursor: pointer;
 }
 
+/* ----- Menu Dropdown para as Configurações ----- */ 
+
+.dropdown {
+  position:absolute;
+  background-color:#fff;
+  display:none;
+}
+
+nav li:hover ul, .menu li.over ul{
+  display:block;
+  right: 0;
+  width: 200px;
+}
+
+.li-dropdown {
+  padding-top: 20px;
+}
+
+.li-dropdown:hover {
+  background-color: var(--roxo);
+  color: #fff;
+  width:150px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+
+/* ----- Fim do Menu Dropdown ----- */
+
 header {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 15px;
-    text-shadow: 2px 3px var(--lilas);
+  font-family: 'Press Start 2P', cursive;
+  font-size: 25px;
+  text-shadow: 2px 3px var(--lilas);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 30% auto;
+  grid-column-gap: 20px;
+  margin-top: 100px;
 }
 
 .card-perfil {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
 }
-  
-  img.avatar {
-    border-radius: 50%;
-    width: 120px;
-    padding: 3.7px;
-    border: var(--roxo) solid 4px;
-  }
-  
-  h1 {
-    font-size: 32px;
-  }
-  
-  .username {
-    font-family: 'Roboto Mono', monospace;
-    opacity: 0.8;
-    font-size: 18px;
-  }
-  
-  ul {
-    margin: 48px 0;
-  }
-  
-  ul li a {
-    width: 280px;
-    height: 53px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--lilas); /* hex: 0 - F */
-    color: white;
-    text-transform: uppercase;
-    font-size: 14px;
-  
-    margin-bottom: 16px;
-    border-radius: 6px;
-  
-    transition: 400ms;
-  }
 
+.avatar {
+  border-radius: 50%;
+  width: 250px;
+  padding: 3.7px;
+  border: var(--roxo) solid 5px;
+}
 
-ul li a:hover {
-    background: var(--laranja);
-  }
+.card-perfil h1 {
+  font-size: 32px;
+}
+
+.username {
+  font-family: 'Roboto Mono', monospace;
+  opacity: 0.8;
+  font-size: 18px;
+}
+
+.card-perfil ul {
+  margin: 15px 0;
+}
+
+.card-perfil a {
+  width: 280px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--lilas);
+  color: white;
+  font-size: 14px;
+
+  margin-bottom: 14px;
+  border-radius: 6px;
+
+  transition: 400ms;
+}
+
+.card-perfil a:hover {
+  background-color: var(--laranja);
+}
+
+.card-perfil i {
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.fa-location-pin, .fa-phone {
+  color: var(--roxo);
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.card h3 {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 22px;
+  padding-bottom: 20px;
+}
+
+.card {
+  font-family: Poppins;
+  border:1px solid rgb(212, 212, 212);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: justify;
+}
 
 footer {
-    font-size: 12px;
-    font-style: italic;
-    bottom: 2%;
+  position: absolute;
+  font-size: 11px;
+  font-style: italic;
+  bottom: 2%;
 }
