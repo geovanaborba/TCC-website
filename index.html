@@ -41,9 +41,29 @@
 
         <main>
             <div class="buttons">
-                <a href="./src/assets/pages/quiz.html">
-                    <button class="btn-jogar">Login</button>
-                </a>
+
+
+                <!-- Trigger/Open The Modal -->
+                <button id="btn-modal">Como jogar</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h1>Como jogar??</h1>
+                        <br>
+                        <p>É necessário realizar login para que seu ranking e pontuações fiquem salvas. </p>
+                        <p>Dessa maneira, você pode aprender e revisar tudo o que já viu quando voltar! :) </p>
+                        <br>
+                        Aproveite e preencha seu perfil para conhecer novas pessoas e trocar conhecimentos!
+                        <br>
+                        Bom aprendizado e divirta-se!!
+                    </div>
+                </div>
+
+
                 <a href="./src/assets/pages/pontuacao.html">
                     <button class="btn-pontos">Mostrar Ranking</button>
                 </a>
@@ -88,5 +108,6 @@
 </body>
 
 <script src="https://kit.fontawesome.com/5f56dfe06a.js" crossorigin="anonymous"></script>
+<script src="./src/js/modal.js"></script>
 
 </html>

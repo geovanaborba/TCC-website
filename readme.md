@@ -33,6 +33,8 @@
 
 * [Menu Dropdown com CSS puro | DevMedia](https://www.devmedia.com.br/menu-em-css-menu-dropdown-horizontal-com-html5-e-css3/37205)
 
+* [How to create a modal box | W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp)
+
 <br>
 
 **VÍDEOS:**
