@@ -14,11 +14,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&display=swap"
         rel="stylesheet">
 
-    <title>ProgQuiz - Perfil</title>
+    <title>ProgQuiz - Home</title>
 </head>
 
 <body>
-
     <nav>
         <header>
             <h1>ProgQuiz</h1>
@@ -26,7 +25,7 @@
 
         <div class="menu">
             <ul>
-                <a href="../../../index.html">
+                <a href="./home.html">
                     <li>Início</li>
                 </a>
                 <a href="./pontuacao.html">
@@ -44,105 +43,107 @@
                         <li class="li-dropdown">Alterar foto de perfil</li>
                         <li class="li-dropdown">Alterar dados</li>
                         <li class="li-dropdown">Ver certificados</li>
-                        <li class="li-dropdown">Ranking</li>
+                        <a href="../../../index.html">
+                            <li class="li-dropdown">Deslogar</li>
+                        </a>
                     </ul>
                 </li>
         </div>
     </nav>
 
-    <section class="container">
-        <div class="card-perfil">
-            <img class="avatar" src="../imgs/undraw_female_avatar_re_uk8y.svg">
-            <h1>Fulana da Silva</h1>
-            <p class="username">@usuario123</p>
+    <div class="margem">
+        <section class="container">
 
-            <ul>
+            <div class="col-esq">
+                <div class="card-perfil">
+                    <div class="avatar">
+                        <img src="../imgs/undraw_female_avatar_re_uk8y.svg">
+                    </div>
+                    <div class="infos">
+                        <div class="nome-lvl">
+                            <h3>Fulana da Silva</h3>
+                            <p>Level 11</p>
+                        </div>
+                        <label for="file">Experiência: 3200/10000</label>
+                        <progress id="file" value="32" max="100"> 32% </progress>
+                    </div>
+                </div>
 
-                <li>
-                    <i class="fa-solid fa-phone"></i>
-                    11 9xxxx - xxxx
-                </li>
+                <div class="div-cursos">
+                    <h3>Meus Quizzes</h3>
+
+                    <div class="quiz-det">
+                        <img src="../imgs/css3-original.svg" alt="ícone de css">
+                        <p>CSS - Nível iniciante</p>
+                    </div>
+
+                    <div class="quiz-det">
+                        <img src="../imgs/html5-original.svg" alt="ícone de HTML">
+                        <p>HTML - Nível iniciante</p>
+                    </div>
+
+                    <div class="quiz-det">
+                        <img src="../imgs/javascript-plain.svg" alt="ícone de Javascript">
+                        <p>JS - Nível iniciante</p>
+                    </div>
+                </div>
+
+                <div class="div-cursos">
+                    <h3>Meus artigos</h3>
+                    <p>HTML</p>
+                </div>
+                <div class="div-cursos">
+                    <h3>Lista de Estudo</h3>
 
 
-                <li>
-                    <i class="fa-solid fa-location-pin"></i>
-                    São Paulo, SP
-                </li>
-
-            </ul>
-
-            <ul>
-                <li>
-                    <a target="_blank" href="https://www.linkedin.com/in/geovanaborba/">
-                        <i class="fa-brands fa-linkedin"></i>
-                        LinkedIn
-                    </a>
-                </li>
-
-                <li>
-                    <a target="_blank" href="https://github.com/geovanaborba">
-                        <i class="fa-brands fa-github"></i>
-                        GitHub
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#">
-                        <i class="fa-solid fa-envelope"></i>
-                        E-mail
-                    </a>
-                </li>
-
-            </ul>
-
-
-        </div>
-
-        <div class="coluna">
-            <div class="card">
-                <h3>Sobre Mim</h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet. Sed dolorem pariatur eos praesentium laborum et distinctio quae quo
-                    rerum eius. Aut totam aspernatur est corporis molestiae est doloremque aperiam id amet esse non
-                    molestias accusamus in necessitatibus nihil et optio eius.
-                </p>
-                <br>
-                <p>
-                    Ut eaque totam qui amet similique et odio quia est explicabo delectus? Qui ipsum maxime est
-                    consectetur eaque sed magnam nemo aut omnis rerum nam placeat eius et quaerat eaque. Id asperiores
-                    veniam et galisum minus aut repellendus vitae aut dolorem tempora!
-                </p>
-                <br>
-                <p>
-                    Eos voluptatem minima At necessitatibus accusantium et velit obcaecati eum reiciendis saepe ut
-                    voluptatum libero. Non omnis tenetur est perspiciatis nisi nam quas enim nam tempora facere ab
-                    voluptatem voluptatibus quo quia dolores.
-                </p>
+                </div>
             </div>
 
-            <div class="card">
-                <h3>Skills</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>Javascript</li>
-                    <li>Php</li>
-                    <li>Java</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h3>Formação Acadêmica</h3>
-                <ul>
-                    <li>Técnico em Desenvolvimento de Sistemas - ETEC</li>
+
+
+
+            <div class="coluna">
+                <h3>FEED</h3>
+                <div class="card">
+                    <h3>Novas Atualizações</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet. Sed dolorem pariatur eos praesentium laborum et distinctio quae quo
+                        rerum eius. Aut totam aspernatur est corporis molestiae est doloremque aperiam id amet esse non
+                        molestias accusamus in necessitatibus nihil et optio eius.
+                    </p>
                     <br>
-                    <li>Técnico em Informática </li>
-                </ul>
+                    <p>
+                        Ut eaque totam qui amet similique et odio quia est explicabo delectus? Qui ipsum maxime est
+                        consectetur eaque sed magnam nemo aut omnis rerum nam placeat eius et quaerat eaque. Id
+                        asperiores
+                        veniam et galisum minus aut repellendus vitae aut dolorem tempora!
+                    </p>
+                    <br>
+                    <p>
+                        Eos voluptatem minima At necessitatibus accusantium et velit obcaecati eum reiciendis saepe ut
+                        voluptatum libero. Non omnis tenetur est perspiciatis nisi nam quas enim nam tempora facere ab
+                        voluptatem voluptatibus quo quia dolores.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <h3>Últimos Adicionados</h3>
+                    <ul>
+                        <li>HTML5 - Nível Extremamente Avançado</li>
+                        <li>CSS3 - Nível Extremamente Avançado</li>
+                        <li>Javascript - Nível Extremamente Avançado</li>
+                        <li>Php - Nível Extremamente Avançado</li>
+                        <li>Java - Nível Extremamente Avançado</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Divulgue o ProgQuiz!</h3>
+                    <p>Lorem Ipsum.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
+    </div>
 
     <footer>
         <p>Página criada como parte do Trabalho de Conclusão de Curso do curso técnico de Desenvolvimento de Sistemas da

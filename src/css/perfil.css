@@ -20,7 +20,7 @@ nav li {
   display: inline-block;
   margin-left: 20px;
   font-size: 15px;
-  
+  color: #000;
 }
 
 nav li:hover {
@@ -36,7 +36,8 @@ nav li:hover {
   display:none;
 }
 
-nav li:hover ul, .menu li.over ul{
+nav li:hover ul, 
+.menu li:hover ul{
   display:block;
   right: 0;
   width: 200px;
@@ -49,7 +50,7 @@ nav li:hover ul, .menu li.over ul{
 .li-dropdown:hover {
   background-color: var(--roxo);
   color: #fff;
-  width:150px;
+  width:200px;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   }
 

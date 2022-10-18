@@ -18,6 +18,7 @@ nav li {
     display: inline-block;
     margin-left: 20px;
     font-size: 15px;
+    color: #000;
 }
 
 nav li:hover {
