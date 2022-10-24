@@ -78,7 +78,7 @@ header {
 .nome h3 {
     font-size: 20px;
     line-height: 30px;
-    color: var(--laranja)
+    color: var(--laranja);
 }
       
 .card {
@@ -91,7 +91,7 @@ header {
 }
       
 .card:hover {
-    background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    background: var(--roxo);
     cursor: pointer;
 }
 
@@ -99,9 +99,76 @@ header {
     width: 60%;
 }
 
+.card i {
+    position: absolute;
+    font-size: 25px;
+}
+
+.card .ouro {
+    color: var(--laranja);
+}
+
+.card .prata {
+    color: var(#ddd);
+}
+
+.card .bronze {
+    color: rgb(184, 93, 9);
+}
+
+
+.lista-container{
+    margin-bottom: 5rem;
+}
+
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: .5rem;
+    background-color: rgb(243, 243, 243);
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+.lista:last-child{
+    border-bottom: none;
+}
+
+.lista img {
+    width: 7%;
+}
+
+.lista-posicao {
+    color: rgba(75, 75, 75);
+    font-weight: bolder;
+}
+
+.lista-quiz{
+    color: rgba(75, 75, 75);
+    width: 40%;
+}
+
+.lista-botao{
+    padding: 1rem;
+    background-color: var(--laranja);
+    color: #fff;
+    border-style: none;
+    border-radius: 3px;
+    max-width: 20%;
+    font-weight: bold;
+}
+
+.lista-botao:hover{
+    color: #000;
+    cursor: pointer;
+    transition: 250ms ease-in-out;
+}
+
 
 footer {
-    position: absolute;
     font-size: 12px;
     font-style: italic;
     padding-top: 60px;
