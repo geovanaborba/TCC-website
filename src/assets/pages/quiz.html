@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../../css/quiz.css">
+    <link rel="stylesheet" href="../../css/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+
     <title>ProgQuiz - Questões</title>
+
 </head>
+
 <body>
 
-    <div id="pergunta"></div>
+    <nav>
+        <a href="./home.html">
+            <header>
+                <h1>ProgQuiz</h1>
+            </header>
+        </a>
+
+        <div class="menu">
+            <ul>
+                <a href="./home.html">
+                    <li>Início</li>
+                </a>
+                <a href="./ranking.html">
+                    <li>Ranking</li>
+                </a>
+                <a href="./estudos.html">
+                    <li>Estudos</li>
+                </a>
+                <a href="./perfil.html">
+                    <li>Perfil</li>
+                </a>
+
+                <li><i class="fa-solid fa-gear"></i>
+                    <ul class="dropdown">
+                        <li class="li-dropdown">Alterar foto de perfil</li>
+                        <li class="li-dropdown">Alterar dados</li>
+                        <li class="li-dropdown">Ver certificados</li>
+                        <a href="../../../index.html">
+                            <li class="li-dropdown">Deslogar</li>
+                        </a>
+                    </ul>
+                </li>
+        </div>
+    </nav>
+
+
+    <div class="margem">
+        <div id="pergunta"></div>
 
         <ul>
             <li class="alternativa"></li>
@@ -17,8 +66,12 @@
             <li class="alternativa"></li>
         </ul>
 
+
         <button id="btn-proxima">Próxima pergunta</button>
-    <script src="../../js/script.js"></script>
-    
+    </div>
+
 </body>
+<script src="https://kit.fontawesome.com/5f56dfe06a.js" crossorigin="anonymous"></script>
+<script src="../../js/script.js"></script>
+
 </html>
