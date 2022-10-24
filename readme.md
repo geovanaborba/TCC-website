@@ -35,9 +35,12 @@
 
 * [How to create a modal box | W3Schools](https://www.w3schools.com/howto/howto_css_modals.asp)
 
+* [Circular Progress Bar with HTML, CSS and JS](https://www.codingnepalweb.com/circular-progress-bar-html-css-javascript/)
+
 <br>
 
 **VÍDEOS:**
 * [Criando um quiz estilo Duolingo | Codi Academy TV](https://youtu.be/W3WZaAQiQq0)
 
 * [How to make a Quiz App | Brian Design](https://youtu.be/f4fB9Xg2JEY)
+
