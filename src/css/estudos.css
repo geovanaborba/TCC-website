@@ -72,24 +72,32 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 25%;
   font-size: 20px;
+  margin-top: 130px;
 }
+
 
 .barras {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  
+  gap: 100px;
+  flex-wrap: wrap;
 }
+
+.barra1, .barra2, .barra3 {
+  text-align: center;
+}
+
+
 /* BARRA DE PROGRESSO CIRCULAR */
 
 .circular {
   height: 100px;
   width: 100px;
   position: relative;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .circular .inner, .circular .outer, .circular .circle{
@@ -213,16 +221,16 @@ header {
 
 
 
-/* BARRA DE PROGRESSO CIRCULAR 2 */
+/* BARRA DE PROGRESSO CIRCULAR 2 e 3 */
 
-.circular2 {
+.circular2, .circular3 {
   height: 100px;
   width: 100px;
   position: relative;
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
-.circular2 .interno, .circular2 .externo, .circular2 .circulo {
+.circular2 .interno, .circular2 .externo, .circular2 .circulo, .circular3 .interno, .circular3 .externo, .circular3 .circulo {
   position: absolute;
   z-index: 6;
   height: 100%;
@@ -231,7 +239,7 @@ header {
   box-shadow: inset 0 1px 0 rgba(0,0,0,0.2);
 }
 
-.circular2 .interno {
+.circular2 .interno, .circular3 .interno {
   top: 50%;
   left: 50%;
   height: 80px;
@@ -241,12 +249,12 @@ header {
   border-radius: 100%;
   box-shadow: 0 1px 0 rgba(0,0,0,0.2);
 }
-.circular2 .circulo {
+.circular2 .circulo, .circular3 .circulo {
   z-index: 1;
   box-shadow: none;
 }
 
-.circular2 .numero {
+.circular2 .numero, .circular3 .numero {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -257,7 +265,7 @@ header {
   color: #4158d0;
 }
 
-.circular2 .barra{
+.circular2 .barra, .circular3 .barra {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -339,15 +347,13 @@ header {
   }
 }
 
-/* FIM DA BARRA DE PROGRESSO 2*/
+/* FIM DA BARRA DE PROGRESSO 2 e 3 */
 
 
 .estudar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 130px;
-
 }
 
 .estudar-titulo {
