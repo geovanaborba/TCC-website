@@ -1,0 +1,216 @@
+:root {
+    --lilas: #8888EA;
+    --laranja: #FCA82F;
+    --roxo: #6066D0;
+    --cinza-escuro: #535050;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 15px;
+    color: #000;
+}
+
+nav li:hover {
+    color: var(--lilas);
+    cursor: pointer;
+}
+
+/* ----- Menu Dropdown para as Configurações ----- */
+
+.dropdown {
+    position: absolute;
+    background-color: #fff;
+    display: none;
+}
+
+nav li:hover ul,
+.menu li:hover ul {
+    display: block;
+    right: 0;
+    width: 200px;
+}
+
+.li-dropdown {
+    padding-top: 20px;
+}
+
+.li-dropdown:hover {
+    background-color: var(--roxo);
+    color: #fff;
+    width: 200px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- Fim do Menu Dropdown ----- */
+
+
+
+header {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    text-shadow: 2px 3px var(--lilas);
+}
+
+.margem {
+    margin: 10%;
+}
+
+
+/* EFEITO ONDAS */
+
+.custom-shape-divider-top-1667003469 {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1667003469 svg {
+    position: relative;
+    display: block;
+    width: calc(132% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1667003469 .shape-fill {
+    fill: #8888EA;
+}
+
+/* FIM EFEITO ONDAS */
+
+
+
+.banner {
+    display: flex;
+    position: relative;
+    background-color: var(--lilas);
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.card-perfil {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin: 1.5% 5%;
+    position: relative;
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 250px;
+    padding: 3.7px;
+    border: var(--laranja) solid 5px;
+    background-color: #fff;
+}
+
+.card-perfil h1 {
+    font-size: 32px;
+}
+
+.username {
+    font-family: 'Roboto Mono', monospace;
+    opacity: 0.8;
+    font-size: 18px;
+}
+
+.nivel {
+    margin: 55px 0 8px 40px;
+    text-transform: uppercase;
+    background-color: var(--laranja);
+
+    border-radius: 20px;
+    width: 90px;
+    text-align: center;
+}
+
+
+.contatos {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 16px;
+    margin-right: 10%;
+    line-height: 40px;
+}
+
+.contatos ul {
+    margin: 15px 0;
+}
+
+.contatos a {
+    color: #fff;
+}
+
+.contatos a:hover {
+    color: var(--laranja);
+}
+
+.contatos i {
+    padding-right: 10px;
+    font-size: 20px;
+}
+
+.fa-location-pin,
+.fa-phone {
+    color: #fff;
+}
+
+
+.conquista-titulo {
+    margin: 100px 0 20px 25%;
+}
+
+.conquistas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-selo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 40px;
+    gap: 30px;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.card h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.card {
+    font-family: Poppins;
+    border: 1px solid rgb(212, 212, 212);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: justify;
+}
+
+footer {
+    font-size: 11px;
+    font-style: italic;
+    bottom: 2%;
+}

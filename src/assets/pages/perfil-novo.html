@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../../css/perfil.css">
+    <link rel="stylesheet" href="../../css/perfil-novo.css">
     <link rel="stylesheet" href="../../css/reset.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&family=Roboto+Mono&display=swap"
+        rel="stylesheet">
 
     <title>ProgQuiz - Perfil</title>
 </head>
@@ -52,29 +54,36 @@
     </nav>
 
 
-    <section class="container">
+
+
+
+
+    <div class="banner">
 
         <div class="card-perfil">
             <img class="avatar" src="../imgs/undraw_female_avatar_re_uk8y.svg">
-            <h1>Fulana da Silva</h1>
-            <p class="username">@usuario123</p>
+            <div class="usuario">
+                <h1>Fulana da Silva</h1>
+                <p class="username">@usuario123</p>
+                <p class="nivel">Nível 11</p>
+                <label for="file">Experiência: 3200/10000</label><br>
+                <progress id="file" value="32" max="100"> 32% </progress>
+            </div>
+        </div>
 
+
+        <div class="contatos">
             <ul>
-
                 <li>
                     <i class="fa-solid fa-phone"></i>
                     11 9xxxx - xxxx
                 </li>
-
 
                 <li>
                     <i class="fa-solid fa-location-pin"></i>
                     São Paulo, SP
                 </li>
 
-            </ul>
-
-            <ul>
                 <li>
                     <a target="_blank" href="#">
                         <i class="fa-brands fa-linkedin"></i>
@@ -97,9 +106,34 @@
                 </li>
 
             </ul>
-
-
         </div>
+    </div>
+
+    <div class="custom-shape-divider-top-1667003469">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+
+
+    <div class="conquista-titulo">
+        <h3>Conquistas: </h3>
+    </div>
+
+    <div class="conquistas">
+
+        <div class="img-selo">
+            <img src="../imgs/css3-original.svg" alt="">
+            <img src="../imgs/git-original.svg" alt="">
+            <img src="../imgs/html5-original.svg" alt="">
+            <img src="../imgs/javascript-plain.svg" alt="">
+        </div>
+    </div>
+
+
+    <div class="margem">
 
         <div class="coluna">
             <div class="card">
@@ -143,7 +177,7 @@
                 </ul>
             </div>
         </div>
-    </section>
+    </div>
 
 
 
