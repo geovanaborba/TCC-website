@@ -204,6 +204,8 @@ header {
 .card {
     font-family: Poppins;
     border: 1px solid rgb(212, 212, 212);
+    background-color: #fff;
+    opacity: 0.6;
     border-radius: 15px;
     padding: 20px;
     text-align: justify;
