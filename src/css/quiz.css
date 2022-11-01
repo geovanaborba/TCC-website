@@ -74,7 +74,17 @@ nav li:hover ul,
     background: #007bff;
 }
 
-.start_btn,
+.botoes_inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    gap: 20px;
+}
+
 .info_box,
 .quiz_box,
 .result_box {
@@ -83,7 +93,7 @@ nav li:hover ul,
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .info_box.activeInfo,
@@ -95,9 +105,11 @@ nav li:hover ul,
     transform: translate(-50%, -50%) scale(1);
 }
 
-.start_btn button {
+.start_btn button,
+.voltar_btn button {
     font-size: 25px;
     font-weight: 500;
+    width: 250px;
     color: #7B55FE;
     padding: 15px 30px;
     outline: none;
@@ -107,14 +119,15 @@ nav li:hover ul,
     cursor: pointer;
 }
 
-.start_btn button:hover {
+.start_btn button:hover,
+.voltar_btn button:hover {
     color: #7B55FE;
-    background: #CCC0F3;
+    background-color: #CCC0F3;
 }
 
 .info_box {
     width: 540px;
-    background: #fff;
+    background-color: #fff;
     border-radius: 5px;
     transform: translate(-50%, -50%) scale(0.9);
     opacity: 0;
