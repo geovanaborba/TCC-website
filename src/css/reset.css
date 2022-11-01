@@ -4,7 +4,7 @@ html, * {
 }
 
 body {
-    background-image: url('https://wallpaperaccess.com/full/3401961.png');
+    background-image: url('../assets/imgs/background-img.png');
 }
 
 ul {

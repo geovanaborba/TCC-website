@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 :root {
     --lilas: #8888EA;
     --laranja: #FCA82F;
     --roxo: #6066D0;
     --cinza-escuro: #535050;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
@@ -61,20 +67,6 @@ nav li:hover ul,
     font-size: 32px;
     text-shadow: 2px 3px var(--lilas);
     color: #000;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    background: #FFFFFF
 }
 
 ::selection {
@@ -397,7 +389,6 @@ footer button.show {
 .result_box .icon {
     font-size: 100px;
     color: #7B55FE;
-    ;
     margin-bottom: 10px;
 }
 
@@ -458,8 +449,7 @@ footer button.show {
     background: #CCC0F3;
 }
 
-
-.title {
+.title-box {
     padding: 0 20px;
     margin: 0 10px;
     display: flex;
