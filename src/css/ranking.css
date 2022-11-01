@@ -73,6 +73,7 @@ header {
     gap: 20px;
     align-items: center;
     padding: 60px 0 80px 0;
+    margin-top: 100px;
   }
 
 .nome h3 {
@@ -97,6 +98,8 @@ header {
 
 .card img {
     width: 60%;
+    background-color: #fff;
+    border-radius: 50%;
 }
 
 .card i {
@@ -127,7 +130,7 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    padding: .5rem;
+    padding: 10px 40px;
     background-color: rgb(243, 243, 243);
     border-radius: 3px;
     margin-bottom: 1rem;
