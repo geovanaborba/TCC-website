@@ -108,7 +108,7 @@ header {
     flex-direction: row;
     align-items: center;
     gap: 50px;
-    margin: 1.5% 5%;
+    margin: 1.5% 10%;
     position: relative;
 }
 
@@ -144,8 +144,8 @@ header {
 .contatos {
     display: flex;
     justify-content: flex-end;
-    font-size: 16px;
-    margin-right: 10%;
+    font-size: 17px;
+    margin-right: 13%;
     line-height: 40px;
 }
 
