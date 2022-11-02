@@ -90,25 +90,40 @@ header {
     border-radius: 5%;
     padding: 50px;
 }
+
+.card-meio {
+    width: 250px;
+    height: 280px;
+    display: block;
+    text-align: center;
+    background-color: var(--lilas);
+    border-radius: 5%;
+    padding: 50px;
+}
       
-.card:hover {
+.card:hover,
+.card-meio:hover {
     background: var(--roxo);
     cursor: pointer;
+    transform: scale(1.4);
 }
 
-.card img {
+.card img,
+.card-meio img {
     width: 60%;
     background-color: #fff;
     border-radius: 50%;
 }
 
-.card i {
+.card i,
+.card-meio i {
     position: absolute;
     font-size: 25px;
 }
 
-.card .ouro {
+.card-meio .ouro {
     color: var(--laranja);
+    font-size: 40px;
 }
 
 .card .prata {
