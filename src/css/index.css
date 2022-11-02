@@ -44,13 +44,15 @@ header {
     justify-content: center;
     align-items: center;
     margin-top: 5%;
+    padding: 40px 0px;
     font-family: 'Press Start 2P', cursive;
-    font-size: 20px;
+    font-size: 55px;
     text-shadow: 2px 4px var(--lilas);
 }
 
 header img {
     width: 200px;
+    padding-bottom: 30px;
 }
 
 main {

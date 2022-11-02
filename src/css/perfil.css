@@ -64,43 +64,17 @@ header {
     text-shadow: 2px 3px var(--lilas);
 }
 
-.margem {
-    margin: 10%;
-}
-
-
-/* EFEITO ONDAS */
-
-.custom-shape-divider-top-1667003469 {
-    position: absolute;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1667003469 svg {
-    position: relative;
-    display: block;
-    width: calc(132% + 1.3px);
-    height: 100px;
-}
-
-.custom-shape-divider-top-1667003469 .shape-fill {
-    fill: #8888EA;
-}
-
-/* FIM EFEITO ONDAS */
-
-
 
 .banner {
     display: flex;
     position: relative;
-    background-color: var(--lilas);
+    background-color: #7B55FE;
     justify-content: space-between;
     align-items: center;
     color: #fff;
-    margin-top: 100px;
+    opacity: 0.85;
+    margin: 100px 10% 0 10%;
+    border-radius: 20px 20px 0px 0px;
 }
 
 .card-perfil {
@@ -108,7 +82,7 @@ header {
     flex-direction: row;
     align-items: center;
     gap: 50px;
-    margin: 1.5% 10%;
+    margin: 1.5% 2%;
     position: relative;
 }
 
@@ -179,33 +153,28 @@ header {
     justify-content: center;
     align-items: center;
     text-align: justify;
-
 }
 
 .cartao {
-    background-color: var(--lilas);
-    border: 1px solid rgb(212, 212, 212);
+    border: none;
     opacity: 0.8;
     width: 100%;
-    border-radius: 10px;
     overflow: hidden;
-    padding: 30px;
-    margin: 10%;
-}
-
-.cartao .conteudo {
-    margin-top: 15px;
 }
 
 .cartao .abas {
     display: flex;
+    margin: 0% 10%;
 }
 
 .cartao .abas .aba {
+    background-color: #5034b8;
+    color: #fff;
     width: 50%;
     display: flex;
     justify-content: center;
     padding: 10px 0;
+    border-radius: 0px 0px 20px 20px;
     cursor: pointer;
     transition: background-color 0.2s ease-in-out;
 }
@@ -213,19 +182,26 @@ header {
 
 .cartao .abas .aba.selecionado {
     background-color: #fff;
+    color: #000;
 }
 
 .cartao .informacoes-abas {
-    background-color: #fff;
+    margin: 3% 10%;
+    border-radius: 15px;
 }
 
 .cartao .abas .aba:hover {
-    background-color: var(--roxo);
+    background-color: var(--lilas);
+    color: #000;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .informacoes-abas .informacao {
     min-height: 260px;
-    padding: 15px;
+    padding: 40px; /*se aumentar ou diminuir, muda o tamanho da margem do branco */
+
+    align-items: center;
+    text-align: center;
     display: none;
 }
 
@@ -235,21 +211,20 @@ header {
 
 .informacoes-abas .sub-titulo {
     font-size: 22px;
-    margin: 25px;
-    text-align: center;
+    padding-bottom: 40px;
+    text-align: left;
     font-family: 'Press Start 2P', cursive;
 }
 
 .informacoes-abas .descricao {
     font-size: 16px;
-    max-height: 500px;
+    max-height: 100%;
     overflow-y: auto;
-    padding-right: 15px;
     text-align: justify;
 }
 
 .informacoes-abas .descricao span {
-    color: #02d08f;
+    color: var(--laranja);
 }
 
 .redes-sociais {
@@ -257,7 +232,7 @@ header {
     flex-direction: column;
     gap: 25px;
     align-items: center;
-    max-height: 500px;
+    max-height: 100%;
     overflow-y: auto;
 }
 
@@ -276,7 +251,7 @@ header {
 }
 
 .redes-sociais .curriculo {
-    background-color: #06c185;
+    background-color: rgb(247, 61, 123);
 }
 
 .redes-sociais .linkedin {
@@ -291,28 +266,23 @@ header {
 
 .conquistas {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-height: 500px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 120px;
+    max-height: 100%;
 }
 
 .img-selo {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 40px;
-    gap: 30px;
+    padding-top: 80px;
+    width: 80px;
+}
+
+.img-selo span {
+    font-size: 14px;
 }
 
 
-
-
-
-
-
-
-
-.coluna {
+.sobre-mim {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -326,13 +296,12 @@ header {
 
 .card {
     font-family: Poppins;
-    border: 1px solid rgb(212, 212, 212);
     background-color: #fff;
-    opacity: 0.6;
     border-radius: 15px;
-    padding: 20px;
+    padding: 30px;
     text-align: justify;
 }
+
 
 footer {
     font-size: 11px;
