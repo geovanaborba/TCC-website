@@ -151,8 +151,9 @@ header {
 
 button {
     margin: 20px 0px;
-  }
-  .custom-btn {
+}
+
+.custom-btn {
     width: 130px;
     height: 40px;
     color: #fff;
@@ -165,12 +166,12 @@ button {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-     7px 7px 20px 0px rgba(0,0,0,.1),
-     4px 4px 5px 0px rgba(0,0,0,.1);
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
     outline: none;
-  }
-  
+}
+
 .btn-5 {
     width: 230px;
     height: 40px;
@@ -179,43 +180,47 @@ button {
     margin-top: 60px;
     border: none;
     background: var(--laranja);
-    background: linear-gradient(0deg, rgba(251,75,2,1)  0%, #FCA82F 100%);
+    background: linear-gradient(0deg, rgba(251, 75, 2, 1) 0%, #FCA82F 100%);
 
     font-size: 16px;
     text-transform: uppercase;
-  }
-  .btn-5:hover {
+}
+
+.btn-5:hover {
     color: #f0094a;
-    background: transparent;
-     box-shadow:none;
-  }
-  .btn-5:before,
-  .btn-5:after{
-    content:'';
-    position:absolute;
-    top:0;
-    right:0;
-    height:2px;
-    width:0;
+    background: #ffebe0;
+    box-shadow: none;
+}
+
+.btn-5:before,
+.btn-5:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 2px;
+    width: 0;
     background: #f0094a;
     box-shadow:
-     -1px -1px 5px 0px #fff,
-     7px 7px 20px 0px #0003,
-     4px 4px 5px 0px #0002;
-    transition:400ms ease all;
-  }
-  .btn-5:after{
-    right:inherit;
-    top:inherit;
-    left:0;
-    bottom:0;
-  }
-  .btn-5:hover:before,
-  .btn-5:hover:after{
-    width:100%;
-    transition:800ms ease all;
-  }
-  
+        -1px -1px 5px 0px #fff,
+        7px 7px 20px 0px #0003,
+        4px 4px 5px 0px #0002;
+    transition: 400ms ease all;
+}
+
+.btn-5:after {
+    right: inherit;
+    top: inherit;
+    left: 0;
+    bottom: 0;
+}
+
+.btn-5:hover:before,
+.btn-5:hover:after {
+    width: 100%;
+    transition: 800ms ease all;
+}
+
 
 
 
