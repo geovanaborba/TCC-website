@@ -1,5 +1,26 @@
 # Trabalho de Conclusão de Curso | ETEC
 
+<br>
+
+### Repositório criado em html para mostrar a página no GitHub Pages, tornando possível que o professor acompanhasse o progresso do layout do site mais facilmente, durante as entregas das documentações do TCC no penúltimo semestre do curso.
+
+### Posteriormente, foi criado um novo repositório com os códigos em php para utilizar o banco de dados.
+
+<br>
+
+[⇒ Parte visual da página no GitHub Pages.](https://geovanaborba.github.io/TCC-website/)
+
+
+[⇒ Repositório com o código em PHP.](#)
+
+<br>
+
+<img src="./src/assets/imgs/gif_index.gif">
+
+<center><i>Tela inicial do site</i></center>
+
+<br>
+
 ## Fontes: 
 
 * [Poppins](https://fonts.google.com/specimen/Poppins?query=poppins)
