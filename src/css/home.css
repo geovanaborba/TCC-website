@@ -73,6 +73,11 @@ header {
     margin-top: 100px;
 }
 
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
 .card-perfil {
     display: flex;
     flex-direction: row;
@@ -80,7 +85,7 @@ header {
     align-items: flex-start;
     gap: 15px;
     width: 20vw;
-    padding-top: 40px;
+    padding-top: 50px;
 }
 
 .avatar img {
@@ -92,7 +97,6 @@ header {
 
 .infos {
     text-align: center;
-    justify-content: center;
 }
 
 .infos label {
@@ -121,11 +125,9 @@ header {
     font-weight: bold;
 }
 
-
 .div-cursos {
-    display: flex;
-    flex-direction: column;
     padding-top: 40px;
+    margin-left: 7%;
 }
 
 .div-cursos h3 {
@@ -149,10 +151,6 @@ header {
 
 /* BOTÃO JOGAR */
 
-button {
-    margin: 20px 0px;
-}
-
 .custom-btn {
     width: 130px;
     height: 40px;
@@ -174,7 +172,7 @@ button {
 
 .btn-5 {
     width: 230px;
-    height: 40px;
+    height: 50px;
     line-height: 42px;
     padding: 0;
     margin-top: 60px;
@@ -220,8 +218,6 @@ button {
     width: 100%;
     transition: 800ms ease all;
 }
-
-
 
 
 .coluna {
