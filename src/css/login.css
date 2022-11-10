@@ -145,7 +145,7 @@ main form .password-infos a:hover {
     text-align: center;
 }
 
-main form button:hover {
+main form .btn-login:hover {
     background: var(--laranja);
     color: #fff;
 }
