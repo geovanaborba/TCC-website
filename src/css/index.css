@@ -87,49 +87,6 @@ main {
     cursor: pointer;
 }
 
-.acesso {
-    margin-top: 60px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    padding-bottom: 100px;
-}
-
-.acesso img {
-    width: 180px;
-}
-
-.acesso .app-store {
-    height: 54px;
-    margin-top: 8px;
-}
-
-footer {
-    font-size: 13px;
-    padding: 80px 100px 50px 100px;
-    background-color:var(--roxo) ;
-    color: #fff;
-}
-
-.rodape {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.integrantes h3{
-    color: var(--laranja);
-}
-
-/* Animação coração*/
-.fa-heart {
-    animation-duration: 1.5s; 
-    color: var(--laranja);
-}
-
-
-
-
 
 /* The Modal (background) */
 .modal {
@@ -168,3 +125,56 @@ footer {
     text-decoration: none;
     cursor: pointer;
   }
+
+/* Fim do modal */
+
+
+.acesso {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding-bottom: 100px;
+}
+
+.acesso img {
+    width: 180px;
+}
+
+.acesso .app-store {
+    height: 54px;
+    margin-top: 8px;
+}
+
+footer {
+    font-size: 13px;
+    padding: 80px 100px 60px 100px;
+    background-color:var(--roxo) ;
+    color: #fff;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.integrantes h3{
+    color: var(--laranja);
+    padding-bottom: 10px;
+}
+
+.integrantes p {
+    line-height: 30px;
+}
+
+.integrantes p:hover {
+    color: var(--laranja);
+    font-weight: bold;
+}
+
+/* Animação coração*/
+.fa-heart {
+    animation-duration: 1.5s; 
+    color: var(--laranja);
+}
