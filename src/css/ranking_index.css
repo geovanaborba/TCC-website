@@ -10,56 +10,40 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-nav {
+.topo {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+}
+
+nav {
+    text-align: right;
 }
 
 nav li {
+    position: relative;
     display: inline-block;
-    padding: 0px 0px 15px 20px;
+    margin-left: 10px;
     font-size: 15px;
-    color: #000;
+    background-color: rgb(170, 170, 170);
+    border-radius: 50px;
+    width: 110px;
+    padding: 3px 0px;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
 }
 
 nav li:hover {
-    color: var(--lilas);
+    background-color: var(--roxo);
     cursor: pointer;
 }
-
-/* ----- Menu Dropdown para as Configurações ----- */
-
-.dropdown {
-    position: absolute;
-    background-color: #fff;
-    display: none;
-}
-
-nav li:hover ul,
-.menu li:hover ul {
-    display: block;
-    right: 0;
-    width: 200px;
-}
-
-.li-dropdown {
-    padding-top: 20px;
-}
-
-.li-dropdown:hover {
-    background-color: var(--roxo);
-    color: #fff;
-    width: 200px;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
-}
-
-/* ----- Fim do Menu Dropdown ----- */
 
 header {
     font-family: 'Press Start 2P', cursive;
     font-size: 25px;
     text-shadow: 2px 3px var(--lilas);
+    color: #000;
 }
 
 .margem {
