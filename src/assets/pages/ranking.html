@@ -7,8 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../../css/ranking.css">
+    <link rel="stylesheet" href="../../css/nav.css">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/scroll.css">
+
+    <link rel="stylesheet" href="../../css/responsivo/menu_celular.css"
+    media="screen and (min-width: 0) and (max-width: 767px)">
+    <link rel="stylesheet" href="../../css/responsivo/menu_tablet.css"
+    media="screen and (min-width: 768px) and (max-width: 1000px)">
+
+    <link rel="stylesheet" href="../../css/responsivo/ranking_celular.css"
+    media="screen and (min-width: 0) and (max-width: 767px)">
+    <link rel="stylesheet" href="../../css/responsivo/ranking_tablet.css"
+    media="screen and (min-width: 768px) and (max-width: 1000px)">
+
+    <link rel="stylesheet" href="../../css/responsivo/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +32,13 @@
 </head>
 
 <body>
-
     <nav>
+        <a href="./home.html">
         <header>
             <h1>ProgQuiz</h1>
         </header>
-
+        </a>
+    
         <div class="menu">
             <ul>
                 <a href="./home.html">
@@ -39,12 +53,16 @@
                 <a href="./perfil.html">
                     <li>Perfil</li>
                 </a>
-
+    
                 <li><i class="fa-solid fa-gear"></i>
                     <ul class="dropdown">
                         <li class="li-dropdown">Alterar foto de perfil</li>
-                        <li class="li-dropdown">Alterar dados</li>
-                        <li class="li-dropdown">Ver certificados</li>
+                        <a href="./alterarDados.html">
+                            <li class="li-dropdown">Alterar dados</li>
+                        </a>
+                        <a href="./certificados.html">
+                            <li class="li-dropdown">Ver certificados</li>
+                        </a>
                         <a href="../../../index.html">
                             <li class="li-dropdown">Deslogar</li>
                         </a>
@@ -52,8 +70,6 @@
                 </li>
         </div>
     </nav>
-
-
 
     <body>
 
@@ -86,7 +102,7 @@
                         </div>
                     </div>
                 </a>
-                
+
 
                 <a href="#">
                     <div class="nome">
@@ -139,15 +155,8 @@
                         <span class="lista-quiz">Melhor pontuação: 679</span>
                         <button class="lista-botao">Ver perfil</button>
                     </div>
-
-
-
             </section>
-
         </div>
-
-
-
         <footer>
             <p>Página criada como parte do Trabalho de Conclusão de Curso do curso técnico de Desenvolvimento de
                 Sistemas da
@@ -155,7 +164,6 @@
         </footer>
 
         <script src="https://kit.fontawesome.com/807636c401.js" crossorigin="anonymous"></script>
-        <script src="../../js/circular-progress.js"></script>
     </body>
 
 

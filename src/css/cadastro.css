@@ -14,7 +14,7 @@ body {
     color: #fff;
 }
 
-header{
+header {
     min-height: 15vh;
     display: flex;
     align-items: center;
@@ -25,7 +25,6 @@ header{
     color: #000;
 }
 
-
 .cadastro_titulo {
     font-family: 'Press Start 2P', cursive;
     font-size: 30px;
@@ -34,7 +33,7 @@ header{
     padding-top: 30px;
 }
 
-main{
+main {
     width: 100%;
     min-height: 110vh;
     background: linear-gradient(#8888EA, #6066D0);
@@ -48,7 +47,7 @@ main{
 main form {
     margin-top: 5%;
     width: 35%;
-    height: 95vh;
+    height: 98vh;
     background-color: var(--cinza-escuro);
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.4) inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 18px;
@@ -82,10 +81,14 @@ main form .inputs-container input {
 }
 
 main form .inputs-container input:focus {
-    
+
     box-shadow: inset 1px 4px 7px rgba(0, 0, 0, 0.5);
 
 }
+
+.password-container:first-child {
+    display: none;
+}  
 
 main form .password-container {
     margin-top: 5%;
@@ -111,26 +114,7 @@ main form .password-container #eye {
     display: none;
 }
 
-main form .password-infos {
-    width: 90%;
-    margin-top: 3%;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-main form .password-infos a {
-    transition: 0.2s ease-in-out;
-    color: var(--lilas)
-}
-
-main form .password-infos a:hover {
-    color: var(--laranja)
-}
-
 .btn-login {
-
     width: 90%;
     height: 50px;
     border: 0;
@@ -149,7 +133,7 @@ main form .password-infos a:hover {
     text-align: center;
 }
 
-main form .btn-login:hover {
+main form .btn-cadastro:hover {
     background: var(--laranja);
     color: #fff;
 }
@@ -235,7 +219,7 @@ main form footer hr {
 main form footer span {
     font-weight: 400;
     font-size: 0.9em;
-    margin-top: 5%;
+    margin: 20px 0;
 }
 
 main form footer a {
@@ -247,4 +231,3 @@ main form footer a {
 main form footer a:hover {
     color: #fff;
 }
-

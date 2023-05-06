@@ -62,11 +62,36 @@ nav li:hover ul,
 
 /* ----- Fim do Menu Dropdown ----- */
 
-.titulo h1 {
+header {
     font-family: 'Press Start 2P', cursive;
-    font-size: 32px;
+    font-size: 25px;
     text-shadow: 2px 3px var(--lilas);
     color: #000;
+}
+
+  .boas-vindas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 25vh;
+    font-size: 20px;
+    color: var(--roxo);
+  }
+
+  .boas-vindas h1{
+    margin: auto;
+  }
+  
+ #pontos {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+  }
+
+#pontos .p-pontos {
+    font-weight: bold;
+    padding-left: 5px;
 }
 
 ::selection {
@@ -75,14 +100,12 @@ nav li:hover ul,
 }
 
 .botoes_inicio {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     gap: 20px;
+    position: relative;
+    margin-top: 20px;
 }
 
 .info_box,
@@ -103,6 +126,7 @@ nav li:hover ul,
     z-index: 5;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
+    text-align: center;
 }
 
 .start_btn button,
@@ -117,6 +141,7 @@ nav li:hover ul,
     border-radius: 5px;
     background-color: #fff;
     cursor: pointer;
+    box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.2);
 }
 
 .start_btn button:hover,
@@ -415,6 +440,7 @@ footer button.show {
     margin: 10px 0;
     font-size: 18px;
     font-weight: 500;
+    align-items: center;
 }
 
 .result_box .score_text span p {
@@ -467,3 +493,71 @@ footer button.show {
     margin: 0 10px;
     display: flex;
 }
+
+/* Para telas menores: celulares até 767px */
+@media screen and (min-width: 0) and (max-width: 767px) {
+
+    .boas-vindas {
+        margin-top: 40px;
+    }
+    
+    .info_box {
+        width: 95%;
+    }
+
+    .info_box .info-list {
+        padding: 10px 20px;
+    }
+
+    .quiz_box {
+        width: 320px;
+    }
+
+    .quiz_box header {
+        flex-direction: column;
+        height: 100px;
+    }
+
+    .quiz_box header .title-box {
+        margin-top: 12px;
+    }
+
+    .quiz_box header .title-box img {
+        width: 260px;
+    }
+
+    .quiz_box header .timer {
+        height: 36px;
+        justify-content: space-around;
+        margin-bottom: 5px;
+        width: 220px;
+    }
+
+    .quiz_box header .timer .time_left_txt {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 15px 15px 10px 15px;
+    }
+
+    section .que_text {
+        font-size: 20px;
+    }
+
+    section .option_list .option.disabled {
+        font-size: 15px;
+    }
+
+    .result_box {
+        padding: 10px 20px;
+        width: 320px;
+    }
+    
+    .result_box .score_text span {
+        flex-wrap: wrap;
+        font-size: 16px;
+        justify-content: center;
+    }
+}
+

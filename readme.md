@@ -2,22 +2,31 @@
 
 <br>
 
-### Repositório criado em html para mostrar a página no GitHub Pages, tornando possível que o professor acompanhasse o progresso do layout do site mais facilmente, durante as entregas das documentações do TCC no penúltimo semestre do curso.
-
-### Posteriormente, foi criado um novo repositório com os códigos em php para utilizar o banco de dados.
+### Repositório criado em HTML para hospedar a parte visual do site no GitHub Pages, tornando possível que o professor acompanhasse o progresso do layout mais facilmente durante as entregas das documentações do TCC, a partir do penúltimo semestre do curso. 
 
 <br>
 
-[⇒ Parte visual da página no GitHub Pages.](https://geovanaborba.github.io/TCC-website/)
+### Posteriormente, foi criado um novo repositório com os códigos completos em PHP para utilizar o banco de dados e todos os integrantes contribuírem com o projeto.
 
+<br>
 
-[⇒ Repositório com o código em PHP.](#)
+## [⇒ Projeto completo em PHP com documentação](https://github.com/geovanaborba/TCC-website--complete_code)
+
+<br>
+
+## [⇒ Parte visual da página no GitHub Pages.](https://geovanaborba.github.io/TCC-website/)
+
+*Obs.: Para realizar a entrada no site, basta clicar no botão "Entrar" no canto direito superior da página principal e após, no botão "entrar" da página de login*
 
 <br>
 
 <img src="./src/assets/imgs/gif_index.gif">
 
 <center><i>Tela inicial do site</i></center>
+
+<br>
+
+<hr>
 
 <br>
 

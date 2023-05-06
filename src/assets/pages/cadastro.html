@@ -8,12 +8,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../../css/cadastro.css">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/scroll.css">
+
+    <link rel="stylesheet" href="../../css/responsivo/cadastro&login_celular.css"
+    media="screen and (min-width: 0) and (max-width: 767px)">
+    <link rel="stylesheet" href="../../css/responsivo/cadastro&login_tablet.css"
+    media="screen and (min-width: 768px) and (max-width: 1000px)">
 
     <title>ProgQuiz | Cadastro</title>
 
@@ -29,43 +33,40 @@
 
     <main>
 
-        <form action="cadastroAction.php" method="post">
+        <form>
 
-                <h1 class="cadastro_titulo">Cadastro</h1>
+            <h1 class="cadastro_titulo">Cadastro</h1>
 
             <section class="inputs-container">
 
+                <div class="password-container"> 
+                    <input name="txtID" type="text" placeholder="ID de usuário" hidden><br>
+                </div>
 
                 <div class="password-container">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <input name="txtUsuario" type="email" placeholder="Usuário">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <input name="txtNome" type="text" placeholder="Nome Completo" required>
                 </div>
 
                 <div class="password-container">
                     <i class="fa fa-envelope"></i>
-                    <input name="txtEmail" type="email" id="field-email" class="field-email"
-                        placeholder="example@gmail.com">
+                    <input name="txtEmail" type="email" placeholder="example@gmail.com" required>
                 </div>
 
                 <div class="password-container">
-                    <input name="txtSenha" type="password" id="field-password" class="field-password"
-                        placeholder="******">
+                    <i class="fa fa-user"></i>
+                    <input name="txtUsername" type="text" placeholder="Nome de usuário" required>
+                </div>
+
+                <div class="password-container">
+                    <input name="txtSenha" type="password" id="field-password" class="field-password" placeholder="*********" required>
                     <i class="fa fa-lock"></i>
                 </div>
 
-            </section>
-
-            <section class="password-infos">
-                <div>
-                    <input type="checkbox">
-                    <span>Lembrar senha?</span>
-                </div>
 
             </section>
 
-
-            <a href="../../../index.html" class="btn-login">Cadastrar</a>
-
+            <button class="btn-login" type="submit">Cadastrar</button>
 
             <section class="links-container">
                 <span>Ou entre com:</span>

@@ -7,8 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../../css/perfil.css">
+    <link rel="stylesheet" href="../../css/nav.css">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/scroll.css">
+
+    <link rel="stylesheet" href="../../css/responsivo/menu_celular.css"
+    media="screen and (min-width: 0) and (max-width: 767px)">
+    <link rel="stylesheet" href="../../css/responsivo/menu_tablet.css"
+    media="screen and (min-width: 768px) and (max-width: 1000px)">
+
+    <link rel="stylesheet" href="../../css/responsivo/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,12 +28,13 @@
 </head>
 
 <body>
-
     <nav>
+        <a href="./home.html">
         <header>
             <h1>ProgQuiz</h1>
         </header>
-
+        </a>
+    
         <div class="menu">
             <ul>
                 <a href="./home.html">
@@ -40,12 +49,16 @@
                 <a href="./perfil.html">
                     <li>Perfil</li>
                 </a>
-
+    
                 <li><i class="fa-solid fa-gear"></i>
                     <ul class="dropdown">
                         <li class="li-dropdown">Alterar foto de perfil</li>
-                        <li class="li-dropdown">Alterar dados</li>
-                        <li class="li-dropdown">Ver certificados</li>
+                        <a href="./alterarDados.html">
+                            <li class="li-dropdown">Alterar dados</li>
+                        </a>
+                        <a href="./certificados.html">
+                            <li class="li-dropdown">Ver certificados</li>
+                        </a>
                         <a href="../../../index.html">
                             <li class="li-dropdown">Deslogar</li>
                         </a>
@@ -54,14 +67,13 @@
         </div>
     </nav>
 
-
     <div class="banner">
 
         <div class="card-perfil">
             <img class="avatar" src="../imgs/undraw_female_avatar_re_uk8y.svg">
             <div class="usuario">
-                <h1>Fulana da Silva</h1>
-                <p class="username">@usuario123</p>
+                <h1>Nome do Usuário</h1>
+                <p class="username">@username</p>
                 <p class="nivel">Nível 11</p>
                 <label for="file">Experiência: 3200/10000</label><br>
                 <progress id="file" value="32" max="100"> 32% </progress>
@@ -80,13 +92,16 @@
                     <i class="fa-solid fa-location-pin"></i>
                     São Paulo, SP
                 </li>
+
+                <li><i class="fa-solid fa-cake-candles"></i>01/01/2001</li>
             </ul>
+
             <div class="contatos-detalhes">
                 <ul>
                     <li>
                         <i class="fa-solid fa-briefcase"></i> Desenvolvedora de software
                     </li>
-                    <li><i class="fa-regular fa-heart"></i> Pronouns: Ela/Dela</li>
+                    
                     <li class="frase">"Primeiro resolva o problema. Depois escreva o código"</li>
                 </ul>
             </div>
@@ -177,15 +192,15 @@
                             <ul class="redes-sociais">
 
                                 <li>
-                                    <a href="#" target="_blank" class="curriculo"><i class="fa-solid fa-file"></i>
+                                    <a href="https://github.com/geovanaborba/TCC-website--complete_code" target="_blank" class="curriculo"><i class="fa-solid fa-file"></i>
                                         Currículo</a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i>
+                                    <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i>
                                         LinkedIn</a>
                                 </li>
                                 <li>
-                                    <a href="#" target="_blank" class="github"><i class="fa-brands fa-github"></i>
+                                    <a href="https://www.github.com/" target="_blank" class="github"><i class="fa-brands fa-github"></i>
                                         GitHub</a>
                                 </li>
                                 <li>

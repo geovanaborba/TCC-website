@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/scroll.css">
 
+    <link rel="stylesheet" href="../../css/responsivo/cadastro&login_celular.css"
+        media="screen and (min-width: 0) and (max-width: 767px)">
+    <link rel="stylesheet" href="../../css/responsivo/cadastro&login_tablet.css"
+        media="screen and (min-width: 768px) and (max-width: 1000px)">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Press+Start+2P&display=swap"
         rel="stylesheet">
 
-    <title>ProgQuiz - Questões</title>
+    <title>ProgQuiz - Login</title>
 </head>
 
 <body>
@@ -27,16 +32,17 @@
     </a>
 
     <main>
-        <form>
+        <form action="#" method="post">
 
-                <h1 class="login_titulo">Login</h1>
+            <h1 class="login_titulo">Login</h1>
 
             <section class="inputs-container">
 
-                <input type="email" placeholder="example@gmail.com">
+                <input type="text" placeholder="Insira seu nome de usuário" name="txtUsername" required>
 
                 <div class="password-container">
-                    <input type="password" id="field-password" class="field-password" placeholder="******">
+                    <input type="password" id="field-password" class="field-password" placeholder="******"
+                        name="txtSenha" required>
                     <i class="fas fa-eye" id="eye"></i>
                     <i class="fas fa-eye-slash" id="eye-slash"></i>
                 </div>
@@ -51,8 +57,11 @@
             </section>
 
 
-            <a href="./home.html" class="btn-login">Login</a>
-
+            <button class="btn-login" type="submit">
+                <a href="./home.html">
+                    Entrar
+                </a>
+            </button>
 
             <section class="links-container">
                 <span>Ou entre com:</span>
@@ -74,7 +83,6 @@
     </main>
 
     <script src="https://kit.fontawesome.com/5f56dfe06a.js" crossorigin="anonymous"></script>
-
 
 </body>
 

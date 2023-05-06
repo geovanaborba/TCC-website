@@ -1,0 +1,508 @@
+:root {
+    --lilas: #8888EA;
+    --laranja: #FCA82F;
+    --roxo: #6066D0;
+    --cinza-escuro: #535050;
+}
+
+body {
+    margin: 2%;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0px 0px 15px 20px;
+    font-size: 15px;
+    color: #000;
+}
+
+nav li:hover {
+    color: var(--lilas);
+    cursor: pointer;
+}
+
+/* ----- Menu Dropdown para as Configurações ----- */
+
+.dropdown {
+    position: absolute;
+    background-color: #fff;
+    display: none;
+}
+
+nav li:hover ul,
+.menu li:hover ul {
+    display: block;
+    right: 0;
+    width: 200px;
+}
+
+.li-dropdown {
+    padding-top: 20px;
+}
+
+.li-dropdown:hover {
+    background-color: var(--roxo);
+    color: #fff;
+    width: 90%;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- Fim do Menu Dropdown ----- */
+
+header {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 25px;
+    text-shadow: 2px 3px var(--lilas);
+    color: #000;
+}
+
+main .container {
+    background-color: var(--lilas);
+    padding: 50px;
+    margin: 10%;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+main .container h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--laranja);
+}
+
+.infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    gap: 130px;
+}
+
+.infos img {
+    width: 40%;
+}
+
+/* Início de formulário */
+
+form {
+    font-family: 'Poppins', sans-serif;
+    width: 31rem;
+    position: relative;
+    margin-top: 1rem;
+    padding: 1rem 0;
+}
+
+fieldset {
+    border: 0;
+}
+
+input {
+    border-radius: 2px;
+    width: 20vw;
+    display: block;
+}
+
+label {
+    padding-top: 1em;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.campo {
+    padding-bottom: 2px;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    display: block;
+}
+
+fieldset .campo {
+    float: left;
+    margin-right: 1em;
+}
+
+.campo input[type="text"] {
+    background: #f3f3f3;
+    border: none;
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+.campo input::placeholder {
+    padding-left: 10px;
+}
+
+.campo input:focus {
+    background-color: #e9e9e9;
+    padding-left: 10px;
+}
+
+.campo p {
+    color: var(--laranja);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+    font-size: 12px;
+}
+
+.campo p:hover {
+    color: var(--cinza-escuro);
+    cursor: pointer;
+}
+
+.btn-alterar {
+    display: block;
+    border-radius: 2px;
+    font-size: 1.2em;
+    background: var(--roxo);
+    color: #fff;
+    border: 0;
+    margin-bottom: 1em;
+    padding: 0.3em 1.7em;
+    margin: 50px 0 0 65px;
+    outline: none;
+
+    transform: translate(-50%, -50%);
+}
+
+.btn-alterar:hover {
+    background: var(--laranja);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    cursor: pointer;
+}
+
+form .campo .email {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.email i {
+    position: relative;
+    font-size: 15px;
+    color: white;
+}
+
+[data-tooltip] {
+    position: relative;
+    font-weight: bold;
+}
+
+[data-tooltip]:after {
+    display: none;
+    position: absolute;
+    top: -5px;
+    padding: 5px;
+    border-radius: 3px;
+    left: calc(100% + 2px);
+    content: attr(data-tooltip);
+    width: 200px;
+    background-color: var(--roxo);
+    color: White;
+}
+
+[data-tooltip]:hover:after {
+    display: block;
+}
+
+/*Fim do formulário */
+
+
+.btn-deletar,
+.btn-contato,
+.btn-moderacao {
+    display: block;
+    align-items: center;
+}
+
+.frase {
+    color: #fff;
+    font-size: 12px;
+    margin-left: 10%;
+}
+
+/* Início botão deletar conta */
+
+#btn-modal {
+    display: block;
+    border-radius: 2px;
+    font-size: 1.1em;
+    background: rgb(226, 0, 0);
+    color: #fff;
+    border: 0;
+    padding: 0.7em 2.5em;
+    margin: 80px 0 0 20%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+}
+
+#btn-modal:hover {
+    background: var(--cinza-escuro);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    cursor: pointer;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 30px;
+    border: 1px solid #888;
+    width: 60%;
+    /* Could be more or less, depending on screen size */
+    text-align: center;
+}
+
+/* The Close Button */
+.close {
+    color: var(--cinza-escuro);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Fim do modal */
+
+
+/* Botão de confirmar exclusão no modal */
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+}
+
+.btn-Sim {
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+}
+
+.btn-Sim span {
+    background: rgb(226, 0, 0);
+    background: linear-gradient(0deg, rgb(250, 0, 0) 0%, rgb(180, 0, 0) 100%);
+    color: #fff;
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    margin: 0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.btn-Sim span:nth-child(1) {
+    box-shadow:
+        -7px -7px 20px 0px #fff9,
+        -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002,
+        4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+.btn-Sim span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+}
+
+.btn-Sim:hover span:nth-child(1) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+}
+
+.btn-Sim:hover span:nth-child(2) {
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+}
+
+/* Fim do botão de excluir conta */
+
+
+
+.btn-suporte {
+    display: block;
+    border-radius: 2px;
+    font-size: 1.1em;
+    background: rgb(107, 0, 128);
+    color: #fff;
+    border: 0;
+    padding: 0.7em 1.7em;
+    margin: 80px 0 0 20%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btn-suporte:hover {
+    background: var(--cinza-escuro);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    cursor: pointer;
+}
+
+.btn-mod {
+    display: block;
+    border-radius: 2px;
+    font-size: 1.1em;
+    background: rgb(0, 128, 0);
+    color: #fff;
+    border: 0;
+    padding: 0.7em 1.7em;
+    margin: 80px 0 0 20%;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.btn-mod:hover {
+    background: var(--cinza-escuro);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    text-shadow: none;
+    cursor: pointer;
+}
+
+
+/*-------------------------------------------------------------*/
+
+/* Para telas menores: celulares até 767px */
+@media screen and (min-width: 0) and (max-width: 767px) {
+    main .container {
+        margin: 50px 15px;
+        padding: 10px;
+    }
+
+    .infos {
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 5px;
+    }
+
+    .infos img {
+        margin-top: 15px;
+    }
+
+    .infos form {
+        width: 80%;
+    }
+
+    .campo input {
+        width: 100%;
+    }
+
+    .campo p {
+        margin: 30px 0;
+        text-align: center;
+    }
+
+    .btn-alterar {
+        margin: 0px 0px 30px 65px;
+        transform: none;
+    }
+
+    [data-tooltip]:after {
+        left: calc(100% + -171px);
+        top: -145px;
+    }
+
+    #btn-modal,
+    .btn-suporte,
+    .btn-mod {
+        margin: 20px auto;
+        transform: none;
+    }
+
+    .modal {
+        overflow: hidden;
+    }
+
+    .frase {
+        margin: 10px;
+        text-align: center;
+    }
+}
