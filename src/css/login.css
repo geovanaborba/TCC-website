@@ -126,14 +126,12 @@ main form .password-infos a:hover {
 }
 
 .btn-login {
-    width: 90%;
-    height: 50px;
     border: 0;
     outline: 0;
     border-radius: 12px;
     margin-top: 10%;
-
-    font-size: 30px;
+    padding: 5px 80px;
+    font-size: 28px;
     font-weight: 600;
     background-color: var(--lilas);
     color: #fff;
